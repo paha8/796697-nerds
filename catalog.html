@@ -53,6 +53,67 @@
         <main class="catalog-container">
            <section class="filters">
               <h2 class="visually-hidden">Фильтр товаров</h2>
+              <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+   <fieldset>
+     <legend>Стоимость:</legend>
+       <div class="range-filter">
+         <div class="range-controls">
+           <div class="scale">
+             <div class="bar"></div>
+           </div>
+           <div class="toggle toggle-min"></div>
+           <div class="toggle toggle-max"></div>
+         </div>
+         <div class="price-controls">
+           <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+           <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+         </div>
+       </div>
+   </fieldset>
+   <fieldset>
+      <legend>Сетка:</legend>
+         <ul class="filters-list">
+            <li class="filter-option">
+               <input class="filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+               <label for="filter-adaptive"><span><b>Адаптивная</b></span></label>
+            </li>
+            <li class="filter-option">
+               <input class="filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed" checked>
+               <label for="filter-fixed"><span><b>Фиксированная</b></span></label>
+            </li>
+            <li class="filter-option">
+               <input class="filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber" checked>
+               <label for="filter-rubber"><span><b>Резиновая</b></span></label>
+            </li>   
+         </ul>
+   </fieldset> 
+   <fieldset>
+       <legend>Особенности</legend>
+          <ul class="filters-list">
+              <li class="filter-option">
+                <input class="filter-input-checkbox" type="checkbox" name="slider-id" id="filter-slider-id" checked>
+                <label for="filter-slider-id"><span><b>Слайдер</b></span></label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input-checkbox" type="checkbox" name="advantage-block-id" id="filter-advantage-block-id">
+                <label for="filter-advantage-block-id"><span><b>Блок преимуществ</b></span></label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input-checkbox" type="checkbox" name="news-id" id="filter-news-id">
+                <label for="filter-news-id"><span><b>Новости</b></span></label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input-checkbox" type="checkbox" name="gallery-id" id="filter-gallery-id">
+                <label for="filter-gallery-id"><span><b>Галерея</b></span></label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input-checkbox" type="checkbox" name="basket-id" id="filter-basket-id">
+                <label for="filter-basket-id"><span><b>Корзина</b></span></label>
+              </li>
+            </ul>
+    </fieldset>
+   <input type='submit' value='Показать'>     
+</form>  
            </section>
            <section class="catalog-column">
               <div class="sorting-items">
